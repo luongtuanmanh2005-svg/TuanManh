@@ -1,0 +1,13 @@
+﻿@*
+    for more information on enabling MVC for empty projects, visit http
+*@
+@{
+    ViewData["Title"] = "Welcome";
+}
+<h1>Welcome, @ViewData["Name"]!</h1>
+<p>Your ID is @ViewData["ID"]</p>
+@for (var i = 0; i < (int)ViewBag.numTime; i++)
+{
+    <p>@ViewBag.Message</p>
+    <p>@ViewBag.id</p>
+}
